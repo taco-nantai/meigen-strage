@@ -1,0 +1,15 @@
+exclude:
+  - "**/node_modules/**/*"
+  - '**/bin/**/*'
+  - '**/db/**/*'
+  - '**/config/**/*'
+  - "**/log/**/*"
+  - '**/vendor/**/*'
+  - '**/tmp/**/*'
+EnableDefaultLinters: true
+linters:
+  Rubocop:
+    enabled: true
+    rubocop_config:
+      inherit_from:
+        - .rubocop.yml
